@@ -6,6 +6,17 @@ Antimpeu is a single binary that provides AES-256-GCM-encrypted group messaging 
 
 Quick start
 
+Make sure that [Rust](https://rust-lang.org/learn/get-started/) is installed on your System
+
+Build & install
+
+```sh
+cargo build --release
+# binary: target/release/antimpeu
+cargo install --path .
+```
+
+
 1. Generate a temporary 32-byte DEK and protect the key material locally:
 
 ```sh
@@ -30,8 +41,6 @@ antimpeu client 127.0.0.1 5000
 ```
 
 ![Showcase of Antimpeu's TUI](assets/showcase.png)
-
-Build & install
 
 ```sh
 cargo build --release
